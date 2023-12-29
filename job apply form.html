@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Interview Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('data:image/jpeg;base64,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');
+            background-size: cover
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-size: cover;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4BOeKJi__9GQsxWKkUmQmOSk4qwpvyCKmdg&usqp=CAU');
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #1c1ce1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            size: 100%;
+        }
+
+        button:hover {
+            background-color: #29b830;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+            #container {
+                width: 90%;
+            }
+        }
+
+        h1{
+            text-align: center;
+        }
+    </style>
+
+<script>
+    function redirect() {
+      window.location.href = "file:///C:/Users/dell/Desktop/job%20portal/one%20short%20message.html";
+    }
+    </script>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Job Interview Form</h1>
+        <b>
+        <form id="interviewForm">
+            <h2>
+            <label for="name">Name:-</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:-</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:-</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="job">which job you selected before this form:-</label>
+            <input type="job" id="job" name="job" required>
+
+            <label for="hobby">hobby:-</label>
+            <textarea type="hobby" id="hobby" name="hobby" required></textarea>
+
+            <label for="studies">your studies:-</label>
+            <textarea type="studies" id="studies" name="studies" required></textarea>
+
+            <label for="experience">about yourself in sort:-</label>
+            <textarea id="experience" name="experience" rows="3" required></textarea>
+
+            <label for="experience">experience:-</label>
+            <input type="text" id="experience" name="experience" >
+
+            <button type="submit" onclick="redirect()">Submit</button>
+            </h2>
+        </form>
+        </b>
+    </div>
+
+</body>
+</html>

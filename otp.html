@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDfgyLEKOzs8did1YN_tlzlEwAZ9Epu20gpw&usqp=CAU');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .otp-box {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 40px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .sticker {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 80px;
+            height: 80px;
+            background-image: url('data:image/png;base64,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');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-box">
+        <div class="sticker"></div>
+        <h2>Enter OTP</h2>
+        <input type="text" id="otp" name="otp" placeholder="Enter OTP">
+        <a href="file:///C:/Users/dell/Desktop/job%20portal/job%20portalai.html">
+        <input type="submit" value="Submit">
+        </a>
+    </div>
+</body>
+</html>
